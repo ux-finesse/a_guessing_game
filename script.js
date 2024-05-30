@@ -19,15 +19,15 @@ document.addEventListener('DOMContentLoaded', function (){
         attempts--;
 
         if (userGuess === randomNumber) {
-            feedback.textContent = `Congratulations! You guessed the right number (${randomNumber}).`;
+            feedback.textContent = `🎉 Congratulations! You guessed the right number (${randomNumber}).`;
             feedback.style.color = 'green';
             valueButton.disabled = true;
         } else if (attempts > 0) {
             feedback.textContent = userGuess < randomNumber ? 'Too low!' : 'Too high!';
-            feedback.style.color = 'orange';
+            feedback.style.color = 'purple';
             feedback.textContent += ` You have ${attempts} ${attempts === 1 ? 'attempt' : 'attempts'} left.`;
         } else {
-            feedback.textContent = `Sorry, you've run out of attempts. The number was ${randomNumber}.`;
+            feedback.textContent = `😔 Sorry, you've run out of attempts. The number was ${randomNumber}.`;
             feedback.style.color = 'red';
             valueButton.disabled = true;
         }

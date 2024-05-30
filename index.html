@@ -12,15 +12,20 @@
 <body>
     <main>
             <div class="cont">
-                <h1>
-                    Welcome to the guessing game
-                </h1>
+                <div class="hd-cpt">
+                    <h1>
+                        Welcome to the guessing game
+                    </h1>
+                    <p>Guess a number between 1 and 100. You have three attempts!</p>    
+                </div>
+
                 <div class="form">
                     <label for=""> Please enter a number</label>
-                    <p>Guess a number between 1 and 100. You have three attempts!</p>
                     <input type="text" id="valueInput" placeholder="Kindly enter you guess">
-                    <button id="valueButton">Guess</button>
-                    <p id="feedback"></p>
+                    <div class="btn-fed">
+                        <button id="valueButton">Guess</button>
+                        <p id="feedback"></p>
+                    </div>
                 </div>
             </div>
     </main>
