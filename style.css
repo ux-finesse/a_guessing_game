@@ -6,9 +6,13 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: url(img/bg.svg);
     background-position: center;
     object-fit: cover;
+    margin: 0 auto;
 }
 
 main{
@@ -17,11 +21,9 @@ main{
     justify-content: center;
     max-width: 34rem;
     border-radius: 1.5rem;
-    height: max-content;
     background-color: white;
     padding: 2rem;
     box-shadow: 0rem 0rem 0.313rem #0000002d
-    
 }
 
 input{
@@ -76,5 +78,15 @@ button{
     background-color: darkslategray;
     color: white;
     font-size: 0.875rem;
-
 }
+
+footer{
+    position: absolute;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+

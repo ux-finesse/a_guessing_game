@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function (){
             feedback.style.color = 'green';
             valueButton.disabled = true;
         } else if (attempts > 0) {
-            feedback.textContent = userGuess < randomNumber ? 'Too low!' : 'Too high!';
+            feedback.textContent = userGuess < randomNumber ? '🙄 Too low!,' : '🤨 Too high!,';
             feedback.style.color = 'purple';
             feedback.textContent += ` You have ${attempts} ${attempts === 1 ? 'attempt' : 'attempts'} left.`;
         } else {
