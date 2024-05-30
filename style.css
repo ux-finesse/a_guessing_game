@@ -68,7 +68,7 @@ label{
 
 p#feedback{
     font-size: 0.75rem;
-    width: 50%;
+    /* width: 50%; */
 }
 
 button{

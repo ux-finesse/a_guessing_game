@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function (){
     valueButton.addEventListener('click', function (){
         const userGuess = parseInt(valueInput.value);
 
-
+        // To check if input is not a number....
         if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
-            feedback.textContent = 'Please enter a valid number between 1 and 100.';
+            feedback.textContent = '😁 Kindly enter a valid number between 1 and 100.';
             feedback.style.color = 'red';
             return;
         }
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function (){
             feedback.style.color = 'purple';
             feedback.textContent += ` You have ${attempts} ${attempts === 1 ? 'attempt' : 'attempts'} left.`;
         } else {
-            feedback.textContent = `😔 Sorry, you've run out of attempts. The number was ${randomNumber}.`;
+            feedback.textContent = `😔 Sorry!, you've run out of attempts. The number was ${randomNumber}.`;
             feedback.style.color = 'red';
             valueButton.disabled = true;
         }
