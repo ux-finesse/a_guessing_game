@@ -6,16 +6,20 @@
 }
 
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-image: url(img/bg.svg);
-    margin: 0 auto;
     background-size: cover;
 
 }
 
 main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: calc(100vh - 2.5rem);
+
+}
+
+.cont-wrp{
     display: flex;
     margin: 7rem auto 0;
     justify-content: center;
@@ -28,7 +32,15 @@ main{
 
 input{
     height: 2.5rem;
+    border-radius: .25rem;
     padding: 0 1rem;
+    border: 1px solid rgba(47, 79, 79, 0.495);
+    outline-color: #17272780;
+}
+
+input::-webkit-input-placeholder {
+    color: black;
+    opacity: 0.5;
 }
 
 label{
@@ -39,6 +51,7 @@ label{
 
 .hd-cpt h1{
     font-size: 1.875rem;
+    margin-bottom: .5rem;
 }
 
 .hd-cpt p{
@@ -68,29 +81,87 @@ label{
 
 p#feedback{
     font-size: 0.75rem;
-    /* width: 50%; */
 }
 
 button{
     padding: .5rem 2rem; 
     border-radius: .25rem;
     border: none;
-    background-color: darkslategray;
+    background-color: #2f4f4f;
     color: white;
     font-size: 0.875rem;
 }
 
 button:hover{
-    
+    background-color: #172727;
 }
 
 footer{
-    position: absolute;
     margin-bottom: 1rem;
     display: flex;
     justify-content: center;
-    bottom: 0;
-    right: 0;
-    left: 0;
 }
+
+footer p{
+    text-align: center;
+}
+
+
+@media (max-width: 1024px) {
+
+    body{
+        padding: 0 1.125rem;
+    }
+
+    .btn-fed{
+        width: 75%;
+    }
+
+    .hd-cpt h1{
+        line-height: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    footer{
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+}
+@media (max-width: 768px) {
+
+    body{
+        padding: 0 1.125rem;
+    }
+    
+    .btn-fed{
+        width: 100%;
+    }
+
+    .hd-cpt h1{
+        line-height: 2rem;
+        margin-bottom: .5rem;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    body{
+        padding: 0 1.125rem;
+    }
+
+    .hd-cpt h1{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    p#feedback {
+        font-size: 0.625rem;
+    }
+
+
+}
+
 

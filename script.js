@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function (){
     const valueButton = document.getElementById('valueButton');
     const feedback = document.getElementById('feedback');
 
-    valueButton.addEventListener('click', function (){
+    function handleGuess(){
         const userGuess = parseInt(valueInput.value);
 
         // To check if input is not a number....
@@ -33,7 +33,15 @@ document.addEventListener('DOMContentLoaded', function (){
         }
 
         valueInput.value = '';
+    }
+    // Add click event listener to the guess button
+    valueButton.addEventListener('click', handleGuess);
 
+    // Add keypress event listener to the input field
+    valueInput.addEventListener('keypress', function (event) {
+        if (event.key === 'Enter') {
+            handleGuess();
+        }
     });
 });
 
