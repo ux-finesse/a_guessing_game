@@ -10,9 +10,9 @@ body{
     flex-direction: column;
     justify-content: center;
     background-image: url(img/bg.svg);
-    background-position: center;
-    object-fit: cover;
     margin: 0 auto;
+    background-size: cover;
+
 }
 
 main{
@@ -23,7 +23,7 @@ main{
     border-radius: 1.5rem;
     background-color: white;
     padding: 2rem;
-    box-shadow: 0rem 0rem 0.313rem #0000002d
+    box-shadow: 0rem 0rem 0.313rem #0000002d;
 }
 
 input{
@@ -80,13 +80,17 @@ button{
     font-size: 0.875rem;
 }
 
+button:hover{
+    
+}
+
 footer{
     position: absolute;
     margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     bottom: 0;
-    left: 0;
     right: 0;
+    left: 0;
 }
 
