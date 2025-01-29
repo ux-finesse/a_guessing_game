@@ -8,7 +8,6 @@
 body{
     background-image: url(img/bg.svg);
     background-size: cover;
-
 }
 
 main{
@@ -16,7 +15,6 @@ main{
     flex-direction: column;
     margin: 0 auto;
     height: calc(100vh - 2.5rem);
-
 }
 
 .cont-wrp{
@@ -120,12 +118,6 @@ footer p{
     .hd-cpt h1{
         line-height: 2rem;
         margin-bottom: .5rem;
-    }
-
-    footer{
-        bottom: 0;
-        right: 0;
-        left: 0;
     }
 
 }
